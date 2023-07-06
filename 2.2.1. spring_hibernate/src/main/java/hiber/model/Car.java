@@ -24,26 +24,6 @@ public class Car {
     @JoinColumn(name = "id_user")
     private User user;
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getSeries() {
-        return series;
-    }
-
-    public void setSeries(int series) {
-        this.series = series;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
     public User setUser(User user) {
         this.user = user;
         return user;
