@@ -20,8 +20,7 @@ public class Car {
     public Car() {
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_user")
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "car")
     private User user;
 
     public User setUser(User user) {
